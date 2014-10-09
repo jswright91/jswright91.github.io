@@ -3,5 +3,6 @@ nerdicus.github.io
 
 Resume Website
 
-THIS IS A SIMPLE PROJECT I'VE BEEN WORKING ON THAT PROVIDES WORKING EXAMPLES OF MY WEB DEVELOPMENT WORK AS A
-RESUME AND PORTFOLIO FOR PROSPECTIVE EMPLOYERS TO VIEW.
+
+This is a simple project I've been working on that provides working examples of my web development
+as a resume and portfolio for prospective employers to view.
