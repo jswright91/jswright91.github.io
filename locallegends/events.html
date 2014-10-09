@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Local Legends Events</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="We are a clothing brand/fight gear company that is based out of Arizona. We have a large variety of apparel for both men and women">
+    <meta name="author" content="Justin Wright">
+	<style>
+		.carousel-caption{
+		color:#ffffff;
+		}
+	</style>
+    <!-- Le styles -->
+    <link href="../assets/css/bootstrap.css" rel="stylesheet">
+    <link href="../assets/css/bootstrap-responsive.css" rel="stylesheet">
+	<link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
+	<link href="css/bootstrap-modal-fullscreen.css" rel="stylesheet" />
+	<link href="css/bootstrap-carousel-fit.css" rel="stylesheet" />
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="../assets/ico/favicon.png">
+  </head>
+
+  <body>
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=555544241165052";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+    <div id="wrap">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="brand" href="/"><img src="/img/localleg.gif" style="height:50px;"></img></a>
+          <div class="nav-collapse collapse">
+            <ul class="nav" style="padding-top:15px;">
+              <li><a href="/"><span class="nav-text">Home</span></a></li>
+              <li><a href="about.html"><span class="nav-text">About</span></a></li>
+              <li><a href="calendar.html"><span class="nav-text">Calendar</span></a></li>
+			  <li><a href="events.html"><span class="nav-text active">Events</span></a></li>
+			  <li><a href="shop.html"><span class="nav-text">Shop</span></a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+		<div class="row-fluid">
+		<div class="hero-unit span12">
+		<p>Events are listed in Chronological order. 
+		If you wish to see pictures from an event that isn't listed, please feel free to email us at <a href="mailto:shoplocallegends@yahoo.com">shoplocallegends@yahoo.com</a>
+		</div>
+		</div>
+		<div class="row text-center">
+			<div class="span2">
+			<ul class="thumbnails">
+				  <li>
+					  <div class="thumbnail">
+						<img data-src="holder.js/150x150" alt="event preview"  data-toggle="modal" data-target="#event1" data-local="#myCarousel1"/>
+						<h6>Event Name / Date</h6>
+						<button id="myButtonModal" type="button" class="btn btn-inverse" data-toggle="modal" data-target="#event1" data-local="#myCarousel1">
+						<i class="icon-resize-full icon-white"></i>
+						<span>View the Album</span>
+						</button>
+						<div id="event1" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							<div class="modal-header text-right">
+								<button type="button" class="btn btn-danger" data-dismiss="modal" aria-hidden="true">
+									<i class="icon-remove icon-white"></i>
+									<span>Close</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<div id="myCarousel1" class="carousel slide carousel-fit carousel-caption-active" data-modalize="true">
+									<!-- Carousel items -->
+									<div class="carousel-inner">
+										<div class="item active"><img src="/img/1.jpg">
+											<div class="carousel-caption"><h4>This is a caption</h4><p>This is some smaller text you can add</p></div>
+										</div>
+										<div class="item"><img src="/img/2.jpg">
+											<div class="carousel-caption"><h4>This is another caption</h4><p>This is some more smaller text you can add</p></div>
+										</div>
+									</div>
+									<!-- Carousel nav -->
+									<a class="carousel-control left" href="#myCarousel1" data-slide="prev">&lsaquo;</a>
+									<a class="carousel-control right" href="#myCarousel1" data-slide="next">&rsaquo;</a>
+								</div>
+							</div>
+						</div>
+					  </div>
+				  </li>
+			</ul>
+			</div>
+			
+			<div class="span2">
+			<ul class="thumbnails">
+				  <li>
+					  <div class="thumbnail">
+						<img data-src="holder.js/150x150" alt=""  data-toggle="modal" data-target="#event2" data-local="#myCarousel2"/>
+						<h6>Event Name / Date</h6>
+						<button id="myButtonModal" type="button" class="btn btn-inverse" data-toggle="modal" data-target="#event2" data-local="#myCarousel2">
+						<i class="icon-resize-full icon-white"></i>
+						<span>View the Album</span>
+						</button>
+						<div id="event2" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							<div class="modal-header text-right">
+								<button type="button" class="btn btn-danger" data-dismiss="modal" aria-hidden="true">
+									<i class="icon-remove icon-white"></i>
+									<span>Close</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<div id="myCarousel2" class="carousel slide carousel-fit carousel-caption-active" data-modalize="true">
+									<!-- Carousel items -->
+									<div class="carousel-inner">
+										<div class="item active"><img src="/img/1.jpg"/>
+											<div class="carousel-caption">This is a caption</div>
+										</div>
+										<div class="item"><img src="/img/2.jpg"/>
+											<div class="carousel-caption">This is another caption</div>
+										</div>
+									</div>
+									<!-- Carousel nav -->
+									<a class="carousel-control left" href="#myCarousel2" data-slide="prev">&lsaquo;</a>
+									<a class="carousel-control right" href="#myCarousel2" data-slide="next">&rsaquo;</a>
+								</div>
+							</div>
+						</div>
+					  </div>
+				  </li>
+			</ul>
+			
+			</div>
+			
+			<div class="span2">
+			<ul class="thumbnails">
+				  <li>
+					  <div class="thumbnail">
+						<img data-src="holder.js/150x150" alt=""  data-toggle="modal" data-target="#event3" data-local="#myCarousel3"/>
+						<h6>Event Name / Date</h6>
+						<button id="myButtonModal" type="button" class="btn btn-inverse" data-toggle="modal" data-target="#event3" data-local="#myCarousel3">
+						<i class="icon-resize-full icon-white"></i>
+						<span>View the Album</span>
+						</button>
+						<div id="event3" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							<div class="modal-header text-right">
+								<button type="button" class="btn btn-danger" data-dismiss="modal" aria-hidden="true">
+									<i class="icon-remove icon-white"></i>
+									<span>Close</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<div id="myCarousel3" class="carousel slide carousel-fit carousel-caption-active" data-modalize="true">
+									<!-- Carousel items -->
+									<div class="carousel-inner">
+										<div class="item active"><img src="/img/1.jpg"/>
+											<div class="carousel-caption">This is a caption</div>
+										</div>
+										<div class="item"><img src="/img/2.jpg"/>
+											<div class="carousel-caption">This is another caption</div>
+										</div>
+									</div>
+									<!-- Carousel nav -->
+									<a class="carousel-control left" href="#myCarousel3" data-slide="prev">&lsaquo;</a>
+									<a class="carousel-control right" href="#myCarousel3" data-slide="next">&rsaquo;</a>
+								</div>
+							</div>
+						</div>
+					  </div>
+				  </li>
+			</ul>
+			</div>
+			
+			<div class="span2">
+			<ul class="thumbnails">
+				  <li>
+					  <div class="thumbnail">
+						<img data-src="holder.js/150x150" alt=""  data-toggle="modal" data-target="#event4" data-local="#myCarousel4"/>
+						<h6>Event Name / Date</h6>
+						<button id="myButtonModal" type="button" class="btn btn-inverse" data-toggle="modal" data-target="#event4" data-local="#myCarousel4">
+						<i class="icon-resize-full icon-white"></i>
+						<span>View the Album</span>
+						</button>
+						<div id="event4" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							<div class="modal-header text-right">
+								<button type="button" class="btn btn-danger" data-dismiss="modal" aria-hidden="true">
+									<i class="icon-remove icon-white"></i>
+									<span>Close</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<div id="myCarousel4" class="carousel slide carousel-fit carousel-caption-active" data-modalize="true">
+									<!-- Carousel items -->
+									<div class="carousel-inner">
+										<div class="item active"><img src="/img/1.jpg"/>
+											<div class="carousel-caption">This is a caption</div>
+										</div>
+										<div class="item"><img src="/img/2.jpg"/>
+											<div class="carousel-caption">This is another caption</div>
+										</div>
+									<!-- Carousel nav -->
+									<a class="carousel-control left" href="#myCarousel4" data-slide="prev">&lsaquo;</a>
+									<a class="carousel-control right" href="#myCarousel4" data-slide="next">&rsaquo;</a>
+								</div>
+							</div>
+						</div>
+					  </div>
+				  </li>
+			</ul>
+			</div>
+			
+			<div class="span2">
+			<ul class="thumbnails">
+				  <li>
+					  <div class="thumbnail">
+						<img data-src="holder.js/150x150" alt="" data-toggle="modal" data-target="#event5" data-local="#myCarousel5"/>
+						<h6>Event Name / Date</h6>
+						<button id="myButtonModal" type="button" class="btn btn-inverse" data-toggle="modal" data-target="#event5" data-local="#myCarousel5">
+						<i class="icon-resize-full icon-white"></i>
+						<span>View the Album</span>
+						</button>
+						<div id="event5" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							<div class="modal-header text-right">
+								<button type="button" class="btn btn-danger" data-dismiss="modal" aria-hidden="true">
+									<i class="icon-remove icon-white"></i>
+									<span>Close</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<div id="myCarousel5" class="carousel slide carousel-fit carousel-caption-active" data-modalize="true">
+									<!-- Carousel items -->
+									<div class="carousel-inner">
+										<div class="item active"><img src="/img/1.jpg"/>
+											<div class="carousel-caption">This is a caption</div>
+										</div>
+										<div class="item"><img src="/img/2.jpg"/>
+											<div class="carousel-caption">This is another caption</div>
+										</div>
+									</div>
+									<!-- Carousel nav -->
+									<a class="carousel-control left" href="#myCarousel5" data-slide="prev">&lsaquo;</a>
+									<a class="carousel-control right" href="#myCarousel5" data-slide="next">&rsaquo;</a>
+								</div>
+							</div>
+						</div>
+					  </div>
+				  </li>
+			</ul>
+			</div>
+			
+			<div class="span2">
+			<ul class="thumbnails">
+				  <li>
+					  <div class="thumbnail">
+						<img data-src="holder.js/150x150" alt="" data-toggle="modal" data-target="#event6" data-local="#myCarousel6"/>
+						<h6>Event Name / Date</h6>
+						<button id="myButtonModal" type="button" class="btn btn-inverse" data-toggle="modal" data-target="#event6" data-local="#myCarousel6">
+						<i class="icon-resize-full icon-white"></i>
+						<span>View the Album</span>
+						</button>
+						<div id="event6" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							<div class="modal-header text-right">
+								<button type="button" class="btn btn-danger" data-dismiss="modal" aria-hidden="true">
+									<i class="icon-remove icon-white"></i>
+									<span>Close</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<div id="myCarousel6" class="carousel slide carousel-fit carousel-caption-active" data-modalize="true">
+									<!-- Carousel items -->
+									<div class="carousel-inner">
+										<div class="item active"><img src="/img/1.jpg"/>
+											<div class="carousel-caption">This is a caption</div>
+										</div>
+										<div class="item"><img src="/img/2.jpg"/>
+											<div class="carousel-caption">This is another caption</div>
+										</div>
+									</div>
+									<!-- Carousel nav -->
+									<a class="carousel-control left" href="#myCarousel6" data-slide="prev">&lsaquo;</a>
+									<a class="carousel-control right" href="#myCarousel6" data-slide="next">&rsaquo;</a>
+								</div>
+							</div>
+						</div>
+					  </div>
+				  </li>
+			</ul>
+			</div>
+		</div> <!-- /row -->
+		<div class="row text-center">
+			<div class="span2">
+			<ul class="thumbnails">
+				  <li>
+					  <div class="thumbnail">
+						<img data-src="holder.js/150x150/industrial" alt="" data-toggle="modal" data-target="#event7" data-local="#myCarousel7"/>
+						<h6>Event Name / Date</h6>
+						<button id="myButtonModal" type="button" class="btn btn-inverse" data-toggle="modal" data-target="#event7" data-local="#myCarousel7">
+						<i class="icon-resize-full icon-white"></i>
+						<span>View the Album</span>
+						</button>
+						<div id="event7" class="modal hide fade modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							<div class="modal-header">
+								<button type="button" class="btn btn-danger" data-dismiss="modal" aria-hidden="true">
+									<i class="icon-remove icon-white"></i>
+									<span>Close</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<div id="myCarousel7" class="carousel slide carousel-fit carousel-caption-active" data-modalize="true">
+									<!-- Carousel items -->
+									<div class="carousel-inner">
+										<div class="item active"><img src="/img/1.jpg"/>
+											<div class="carousel-caption">This is a caption</div>
+										</div>
+										<div class="item"><img src="/img/2.jpg"/>
+											<div class="carousel-caption">This is another caption</div>
+										</div>
+									</div>
+									<!-- Carousel nav -->
+									<a class="carousel-control left" href="#myCarousel7" data-slide="prev">&lsaquo;</a>
+									<a class="carousel-control right" href="#myCarousel7" data-slide="next">&rsaquo;</a>
+								</div>
+							</div>
+						</div>
+					  </div>
+				  </li>
+			</ul>
+			</div>
+			
+			<div class="span2">
+			<ul class="thumbnails">
+				  <li>
+					  <div class="thumbnail">
+						<img data-src="holder.js/150x150/industrial" alt="" data-toggle="modal" data-target="#event8" data-local="#myCarousel8"/>
+						<h6>Event Name / Date</h6>
+						<button id="myButtonModal" type="button" class="btn btn-inverse" data-toggle="modal" data-target="#event8" data-local="#myCarousel8">
+						<i class="icon-resize-full icon-white"></i>
+						<span>View the Album</span>
+						</button>
+						<div id="event8" class="modal hide fade modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							<div class="modal-header">
+								<button type="button" class="btn btn-danger" data-dismiss="modal" aria-hidden="true">
+									<i class="icon-remove icon-white"></i>
+									<span>Close</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<div id="myCarousel7" class="carousel slide carousel-fit carousel-caption-active" data-modalize="true">
+									<!-- Carousel items -->
+									<div class="carousel-inner">
+										<div class="item active"><img src="/img/1.jpg"/>
+											<div class="carousel-caption">This is a caption</div>
+										</div>
+										<div class="item"><img src="/img/2.jpg"/>
+											<div class="carousel-caption">This is another caption</div>
+										</div>
+									</div>
+									<!-- Carousel nav -->
+									<a class="carousel-control left" href="#myCarousel8" data-slide="prev">&lsaquo;</a>
+									<a class="carousel-control right" href="#myCarousel8" data-slide="next">&rsaquo;</a>
+								</div>
+							</div>
+						</div>
+					  </div>
+				  </li>
+			</ul>
+			</div>
+			
+			<div class="span2">
+			<ul class="thumbnails">
+				  <li>
+					  <div class="thumbnail">
+						<img data-src="holder.js/150x150/industrial" alt="" data-toggle="modal" data-target="#event9" data-local="#myCarousel9"/>
+						<h6>Event Name / Date</h6>
+						<button id="myButtonModal" type="button" class="btn btn-inverse" data-toggle="modal" data-target="#event9" data-local="#myCarousel9">
+						<i class="icon-resize-full icon-white"></i>
+						<span>View the Album</span>
+						</button>
+						<div id="event9" class="modal hide fade modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							<div class="modal-header">
+								<button type="button" class="btn btn-danger" data-dismiss="modal" aria-hidden="true">
+									<i class="icon-remove icon-white"></i>
+									<span>Close</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<div id="myCarousel9" class="carousel slide carousel-fit carousel-caption-active" data-modalize="true">
+									<!-- Carousel items -->
+									<div class="carousel-inner">
+										<div class="item active"><img src="/img/1.jpg"/>
+											<div class="carousel-caption">This is a caption</div>
+										</div>
+										<div class="item"><img src="/img/2.jpg"/>
+											<div class="carousel-caption">This is another caption</div>
+										</div>
+									</div>
+									<!-- Carousel nav -->
+									<a class="carousel-control left" href="#myCarousel9" data-slide="prev">&lsaquo;</a>
+									<a class="carousel-control right" href="#myCarousel9" data-slide="next">&rsaquo;</a>
+								</div>
+							</div>
+						</div>
+					  </div>
+				  </li>
+			</ul>
+			</div>
+			
+			<div class="span2">
+			<ul class="thumbnails">
+				  <li>
+					  <div class="thumbnail">
+						<img data-src="holder.js/150x150/industrial" alt="" data-toggle="modal" data-target="#event10" data-local="#myCarousel10"/>
+						<h6>Event Name / Date</h6>
+						<button id="myButtonModal" type="button" class="btn btn-inverse" data-toggle="modal" data-target="#event9" data-local="#myCarousel10">
+						<i class="icon-resize-full icon-white"></i>
+						<span>View the Album</span>
+						</button>
+						<div id="event10" class="modal hide fade modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							<div class="modal-header">
+								<button type="button" class="btn btn-danger" data-dismiss="modal" aria-hidden="true">
+									<i class="icon-remove icon-white"></i>
+									<span>Close</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<div id="myCarousel10" class="carousel slide carousel-fit carousel-caption-active" data-modalize="true">
+									<!-- Carousel items -->
+									<div class="carousel-inner">
+										<div class="item active"><img src="/img/1.jpg"/>
+											<div class="carousel-caption">This is a caption</div>
+										</div>
+										<div class="item"><img src="/img/2.jpg"/>
+											<div class="carousel-caption">This is another caption</div>
+										</div>
+									</div>
+									<!-- Carousel nav -->
+									<a class="carousel-control left" href="#myCarousel10" data-slide="prev">&lsaquo;</a>
+									<a class="carousel-control right" href="#myCarousel10" data-slide="next">&rsaquo;</a>
+								</div>
+							</div>
+						</div>
+					  </div>
+				  </li>
+			</ul>
+			</div>
+			
+			<div class="span2">
+			<ul class="thumbnails">
+				  <li>
+					  <div class="thumbnail">
+						<img data-src="holder.js/150x150/industrial" alt="" data-toggle="modal" data-target="#event11" data-local="#myCarousel11"/>
+						<h6>Event Name / Date</h6>
+						<button id="myButtonModal" type="button" class="btn btn-inverse" data-toggle="modal" data-target="#event9" data-local="#myCarousel11">
+						<i class="icon-resize-full icon-white"></i>
+						<span>View the Album</span>
+						</button>
+						<div id="event11" class="modal hide fade modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							<div class="modal-header">
+								<button type="button" class="btn btn-danger" data-dismiss="modal" aria-hidden="true">
+									<i class="icon-remove icon-white"></i>
+									<span>Close</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<div id="myCarousel11" class="carousel slide carousel-fit carousel-caption-active" data-modalize="true">
+									<!-- Carousel items -->
+									<div class="carousel-inner">
+										<div class="item active"><img src="/img/1.jpg"/>
+											<div class="carousel-caption">This is a caption</div>
+										</div>
+										<div class="item"><img src="/img/2.jpg"/>
+											<div class="carousel-caption">This is another caption</div>
+										</div>
+									</div>
+									<!-- Carousel nav -->
+									<a class="carousel-control left" href="#myCarousel11" data-slide="prev">&lsaquo;</a>
+									<a class="carousel-control right" href="#myCarousel11" data-slide="next">&rsaquo;</a>
+								</div>
+							</div>
+						</div>
+					  </div>
+				  </li>
+			</ul>
+			</div>
+			
+			<div class="span2">
+			<ul class="thumbnails">
+				  <li>
+					  <div class="thumbnail">
+						<img data-src="holder.js/150x150/industrial/" alt="" data-toggle="modal" data-target="#event12" data-local="#myCarousel12"/>
+						<h6>Event Name / Date</h6>
+						<button id="myButtonModal" type="button" class="btn btn-inverse" data-toggle="modal" data-target="#event9" data-local="#myCarousel12">
+						<i class="icon-resize-full icon-white"></i>
+						<span>View the Album</span>
+						</button>
+						<div id="event12" class="modal hide fade modal-fullscreen" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+							<div class="modal-header">
+								<button type="button" class="btn btn-danger" data-dismiss="modal" aria-hidden="true">
+									<i class="icon-remove icon-white"></i>
+									<span>Close</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								<div id="myCarousel12" class="carousel slide carousel-fit carousel-caption-active" data-modalize="true">
+									<!-- Carousel items -->
+									<div class="carousel-inner">
+										<div class="item active"><img src="/img/1.jpg"/>
+											<div class="carousel-caption">This is a caption</div>
+										</div>
+										<div class="item"><img src="/img/2.jpg"/>
+											<div class="carousel-caption">This is another caption</div>
+										</div>
+									</div>
+									<!-- Carousel nav -->
+									<a class="carousel-control left" href="#myCarousel12" data-slide="prev">&lsaquo;</a>
+									<a class="carousel-control right" href="#myCarousel12" data-slide="next">&rsaquo;</a>
+								</div>
+							</div>
+						</div>
+					  </div>
+				  </li>
+			</ul>
+			</div>
+		</div> <!-- /row -->
+		
+    </div> <!-- /container -->
+	<div id="push"></div>
+    </div>
+
+    <div id="footer">
+      <div class="container">
+	  <div class="row text-center">
+        <p style="display:inline-block;" class="muted credit span3">&copy; 2013 Local Legends. All rights reserved.</p>
+		<p style="display:inline-block;" class="muted credit fb-like span2 offset2" data-href="https://www.facebook.com/locallegendsaz" data-send="true" data-width="450" data-show-faces="true" data-font="arial" data-colorscheme="dark"></p>
+		<p style="display:inline-block; margin-top:10px !important;" class="muted credit span3 offset2 text-right"><a id="social_f" target="_blank" href="https://www.facebook.com/locallegendsaz"><i class="icon-facebook-sign icon-3x"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;<a id="social_t" target="_blank" href="https://twitter.com/locallegendsaz"><i class="icon-twitter-sign icon-3x"></i></a></p>
+      </div>
+	  </div>
+    </div>
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap-transition.js"></script>
+    <script src="../assets/js/bootstrap-alert.js"></script>
+    <script src="../assets/js/bootstrap-modal.js"></script>
+    <script src="../assets/js/bootstrap-dropdown.js"></script>
+    <script src="../assets/js/bootstrap-scrollspy.js"></script>
+    <script src="../assets/js/bootstrap-tab.js"></script>
+    <script src="../assets/js/bootstrap-tooltip.js"></script>
+    <script src="../assets/js/bootstrap-popover.js"></script>
+    <script src="../assets/js/bootstrap-button.js"></script>
+    <script src="../assets/js/bootstrap-collapse.js"></script>
+    <script src="../assets/js/bootstrap-carousel.js"></script>
+    <script src="../assets/js/bootstrap-typeahead.js"></script>
+	<script src="../assets/js/holder/holder.js"></script>
+	<script src="js/bootstrap-carousel-fit.js"></script>
+	<script src="js/bootstrap-modal-carousel.js"></script>
+	<script src="js/bootstrap-modal-fullscreen.js"></script>
+	<script src="js/bootstrap-modal-local.js"></script>
+	<script type="text/javascript">
+		function nocontext(e) {
+			var clickedTag = (e==null) ? event.srcElement.tagName : e.target.tagName;
+			if (clickedTag == "IMG") {
+				//alert(alertMsg);
+				return false;
+			}
+		}
+		var alertMsg = "Image context menu is disabled";
+		document.oncontextmenu = nocontext;
+	</script>
+  </body>
+</html>
