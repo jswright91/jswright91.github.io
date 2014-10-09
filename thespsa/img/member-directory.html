@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>SPSA &middot; Member Directory</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Justin S Wright">
+	<!-- Le styles -->
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="assets/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+	  body {
+        height:100%;
+      }
+	  
+	  .caption{
+		padding:0px !important;
+	  }
+	  
+	  /* Bring down the Navbar Links, to the center of the Navbar */
+	
+	  .navbar .nav {
+	  margin: 21px 0 0 0;
+	  }
+	  .navbar-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 10;
+      margin-top: 20px;
+    }
+
+    /* Downsize the brand/project name a bit */
+    .navbar .brand {
+	  margin-left:1px;
+      padding: 14px 20px 16px; /* Increase vertical padding to match navbar links */
+      font-size: 16px;
+      font-weight: bold;
+      text-shadow: 0 -1px 0 rgba(0,0,0,.5);
+    }
+
+    /* Navbar links: increase padding for taller navbar */
+    .navbar .nav > li > a {
+      padding: 15px 20px;
+    }
+	
+	#wrap {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        /* Negative indent footer by it's height */
+        margin: 0 auto -60px;
+      }
+	  
+	  .uneditable {
+	  text-decoration:none;
+	  color: #0088cc;
+	  cursor: not-allowed;
+	  }
+	  
+	  .hidden {
+	   display:none;
+	  }
+	  
+	  .selected { 
+	  font-size:18px;
+	  font-weight:bold;
+	  text-decoration:underline;
+	  font-family:"Franklin Gothic Medium";
+	  color:#385893;
+	  }
+	  
+	  
+	  
+	  .mfgrs {
+	  width:200px;
+	  float:left;
+	  text-align:left;
+	  }
+	  
+	  .mfgrs a:hover {
+	  font-size:18px;
+  	  line-height:21px;
+	  color:#000044;
+	  text-decoration:underline;
+	  }
+	  
+	  .alpha_bar{
+		font-weight:bold;
+		font-size:18px;
+		color: #737CA1;
+		padding-top:25px;
+	  }
+	  
+	  .manu{
+		font-size:12px;
+		display:block;
+		color:#737ca1;
+	  }
+	  
+	  img.manu {
+		max-height:100px;
+		min-width:100px;
+		margin:auto;
+		overflow:hidden;
+	  }
+	  
+	  .manu a:hover {
+		font-size:12px;
+		font-weight:bold;
+		color:#333366;
+	  }
+	  
+	  .na{
+		display:block;
+		text-align:center;
+		color:#333366;
+	  }
+	  
+	  .ul li{
+		float: left;
+		list-style-type: none;
+	  }
+	  
+	  .block>a{
+		font-weight:bold;
+		font-size:12px;
+		display : block;
+		float : left;
+		margin : 0 0 5px 5px;
+		padding : 5px;
+		width : 100px;
+		height : 100px;
+		background : #ffffff;
+		border : 1px solid #ddd;
+	  }
+	  
+	  a.block{
+		vertical-align:center;
+	  }
+	  
+	  .block>a:hover{
+		font-weight:bold;
+		font-size:14px;
+		background: #bfbfbf;
+		color: #990000;
+	  }
+	  
+	  .cb{
+		clear:both;
+	  }
+	  
+    </style>
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5shiv.js"></script>
+    <![endif]-->
+	
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+                    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+                                   <link rel="shortcut icon" href="assets/ico/favicon.png">
+  </head>
+
+  </head>
+
+  <body>
+  <div id='wrap'>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="brand" href="#"><img class="" width="100" src="img/logo.png"></img></a>
+			<ul class="nav pull-right">
+			<li class="pull-right"><a href="login.html"><i class="icon-user"> Login</i></a></li>
+			</ul>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li><a href="/bootstrap">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact-form.php">Contact</a></li>
+                <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
+                <li class="dropdown active">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="pool-maintenance.html">Pool Maintenance</a></li>
+                    <li><a href="pool-safety.html">Pool Safety</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Press Room</a></li>
+					<li class="divider"></li>
+                    <li class="nav-header">Registered Users</li>
+                    <li class="active"><a href="member-directory.html">Members</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+    </div>
+
+    <div class="container">
+      <div style="margin-top:120px;" class="well text-center">
+        <h1>Member Directory</h1><br>
+		<div class='alpha_bar' cursor-type:pointer;>
+		<a letterclass='a_block'>A</a>
+		<a letterclass='b_block'>B</a>
+		<a letterclass='c_block'>C</a>
+		<a letterclass='d_block'>D</a>
+		<a letterclass='e_block'>E</a>
+		<a letterclass='f_block'>F</a>
+		<a letterclass='g_block'>G</a>
+		<a letterclass='h_block'>H</a>
+		<u class="uneditable" letterclass='i_block'>I</u>
+		<a letterclass='j_block'>J</a>
+		<u class="uneditable" letterclass='k_block'>K</u>
+		<u class="uneditable" letterclass='l_block'>L</u>
+		<a letterclass='m_block'>M</a>
+		<a letterclass='n_block'>N</a>
+		<u class="uneditable" letterclass='o_block'>O</u>
+		<a letterclass='p_block'>P</a>
+		<u class="uneditable" letterclass='q_block'>Q</u>
+		<a letterclass='r_block'>R</a>
+		<a letterclass='s_block'>S</a>
+		<a letterclass='t_block'>T</a>
+		<a letterclass='u_block'>U</a>
+		<u class="uneditable" letterclass='v_block'>V</u>
+		<a letterclass='w_block'>W</a>
+		<u class="uneditable" letterclass='x_block'>X</u>
+		<u class="uneditable" letterclass='y_block'>Y</u>
+		<u class="uneditable" letterclass='z_block'>Z</u>
+		<a letterclass='1'>Show All</a>
+		<hr>
+		</div>
+	  </div>
+		<div style="margin:auto;" align="center" class='block span12'>
+		<ul class="thumbnails">
+		<!-- A BLOCK ?-->
+		<li class='1 a_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/g/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="http://www.bbb.org/central-northern-western-arizona/business-reviews/swimming-pool-contractors-dealers-design/a-c-t-rebar-contractors-inc-in-glendale-az-3006201" target="_blank" class="btn btn-primary">BBB</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 a_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 a_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/g/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 a_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 a_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 a_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 a_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 a_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+<!-- B BLOCK ?-->
+		<li class='1 b_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 b_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 b_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 b_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 b_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 b_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+<!-- C BLOCK ?-->
+		<li class='1 c_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 c_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 c_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 c_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 c_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 c_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 c_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 c_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+<!-- D BLOCK ?-->
+		<li class='1 d_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 d_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 d_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+<!-- E BLOCK ?-->
+		<li class='1 e_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 e_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+<!-- F BLOCK ?-->
+		<li class='1 f_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 f_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 f_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 f_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+<!-- G BLOCK ?-->
+		<li class='1 g_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+<!-- H BLOCK ?-->
+		<li class='1 h_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 h_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 h_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 h_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+<!-- I BLOCK ?-->
+<!-- J BLOCK ?-->
+		<li class='1 j_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+<!-- K BLOCK ?-->
+<!-- L BLOCK ?-->
+<!-- M BLOCK ?-->
+		<li class='1 m_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 m_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 m_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 m_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 m_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+<!-- N BLOCK ?-->
+		<li class='1 n_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+<!-- O BLOCK ?-->
+<!-- P BLOCK ?-->
+		<li class='1 p_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 p_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 p_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 p_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 p_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 p_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 p_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 p_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 p_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 p_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 p_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+<!-- Q BLOCK ?-->
+<!-- R BLOCK ?-->
+		<li class='1 r_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 r_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 r_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+<!-- S BLOCK ?-->
+		<li class='1 s_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 s_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 s_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 s_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 s_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 s_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 s_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 s_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+<!-- T BLOCK ?-->
+		<li class='1 t_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 t_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 t_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+		<li class='1 t_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+<!-- U BLOCK ?-->
+		<li class='1 u_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+<!-- V BLOCK ?-->
+<!-- W BLOCK ?-->
+		<li class='1 w_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+<!-- X BLOCK ?-->	
+		<li class='1 x_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+<!-- Y BLOCK ?-->	
+		<li class='1 y_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+<!-- Z BLOCK ?-->
+		<li class='1 z_block' class="span4">
+			<div class="thumbnail">
+				<img src="http://placekitten.com/200/200" alt="">
+				<div class="caption">
+				<h3>Thumbnail label</h3>
+				<p><a href="www.website.com" target="_blank" class="btn btn-primary">www.website.com</a></p>
+				</div>
+			</div>
+		</li>
+	</ul>
+	</div>
+
+
+      <hr class="cb">
+	  <div id='push' class='push'></div>
+    </div> <!-- /container -->
+	</div>
+	<div id="footer">
+	  <div class="container">
+		<p class="muted credit text-center">&copy; 2013 Southwest Pool and Spa Association. All rights reserved &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a> &middot; <a href="#">Sitemap</a> &middot; <a href="#">Disclaimer</a> &middot; <a href="#">Blog</a> &middot; </p>
+	  </div>
+	</div>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/bootstrap-transition.js"></script>
+    <script src="assets/js/bootstrap-alert.js"></script>
+    <script src="assets/js/bootstrap-modal.js"></script>
+    <script src="assets/js/bootstrap-dropdown.js"></script>
+    <script src="assets/js/bootstrap-scrollspy.js"></script>
+    <script src="assets/js/bootstrap-tab.js"></script>
+    <script src="assets/js/bootstrap-tooltip.js"></script>
+    <script src="assets/js/bootstrap-popover.js"></script>
+    <script src="assets/js/bootstrap-button.js"></script>
+    <script src="assets/js/bootstrap-collapse.js"></script>
+    <script src="assets/js/bootstrap-carousel.js"></script>
+    <script src="assets/js/bootstrap-typeahead.js"></script>
+	<script type='text/javascript'>
+	$.ajaxSetup({ cache: false });
+	$(function() {
+		$(".alpha_bar a").click(function(){
+			var letterclass = $(this).attr('letterclass');
+			$('.alpha_bar a').removeClass('selected');
+			$(this).addClass('selected');
+			$(".block li").hide();
+			$("."+letterclass).show();
+		});
+		$('.alpha_bar li[letterclass=1]').click()
+	});
+</script>
+	<script src="assets/js/holder/holder.js"></script>
+  </body>
+</html>
