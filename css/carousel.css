@@ -99,8 +99,22 @@ body {
   letter-spacing: -1px;
 }
 
+/* Display different colors, for different navbar active elements */
+.navbar-nav>.active>a >#about, .navbar-nav>.active>a >#about:hover, .navbar-nav>.active>a >#about:focus{
+  background-color:#d9edf7;
+  border-color:#bce8f1;
+}
 
 
+.navbar-nav>.active>a >#custom, .navbar-nav>.active>a >#custom:hover, .navbar-nav>.active>a >#custom:focus{
+  background-color:#dff0d8;
+  border-color:#d6e9c6;
+}
+
+.navbar-nav>.active>a >#photoshop, .navbar-nav>.active>a >#photoshop:hover, .navbar-nav>.active>a >#photoshop:focus{
+  background-color:#fcf8e3;
+  border-color:#faebcc;
+}
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
