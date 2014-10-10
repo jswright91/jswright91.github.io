@@ -103,9 +103,9 @@ body {
 #nav-about.active>a,
 #nav-about.active>a:hover,
 #nav-about.active>a:focus{
-  background-color:#d9edf7 !important;
-  border-color:#bce8f1 !important;
-  color:#31708f !important;
+  color: #ffffff !important;
+  background-color: #C63D2D !important;
+  border-color: #C63D2D !important;
 }
 
 #nav-custom.active>a,
