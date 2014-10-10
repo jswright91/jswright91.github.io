@@ -139,6 +139,24 @@ body {
   color: #3a32d9;
 }
 
+.btn-facebook {
+  color: #ffffff;
+  background-color: #3B5998;
+  border-color: #3B5998;
+}
+
+.btn-google {
+  color: #ffffff;
+  background-color: #C63D2D;
+  border-color: #C63D2D;
+}
+
+.btn-linkedin {
+  color: #ffffff;
+  background-color: #4875B4;
+  border-color: #4875B4;
+}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
