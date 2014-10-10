@@ -121,6 +121,19 @@ body {
   border-color:#faebcc !important;
 }
 
+#nav-contact.active>a,
+#nav-contact.active>a:hover,
+#nav-contact.active>a:focus{
+  background-color:#8d87ff !important;
+  border-color:#6961ff !important;
+}
+
+.alert-royal{
+  background-color: #8d87ff;
+  border-color: #6961ff;
+  color: #3a32d9;
+}
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
