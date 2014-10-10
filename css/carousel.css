@@ -100,17 +100,17 @@ body {
 }
 
 /* Display different colors, for different navbar active elements */
-.navbar-default .navbar-nav>.about>.active>a, .navbar-default .navbar-nav>.about>.active>a:hover, .navbar-default .navbar-nav>.about>.active>a:focus{
+.navbar-default .navbar-nav>.about>.active> li>a, .navbar-default .navbar-nav>.about>.active>li>a:hover, .navbar-default .navbar-nav>.about>.active>li>a:focus{
   background-color:#d9edf7 !important;
   border-color:#bce8f1 !important;
 }
 
-.navbar-default .navbar-nav>.custom>.active>a, .navbar-default .navbar-nav>.custom>.active>a:hover, .navbar-default .navbar-nav>.custom>.active>a:focus{
+.navbar-default .navbar-nav>.custom>.active>li>a, .navbar-default .navbar-nav>.custom>.active>li>a:hover, .navbar-default .navbar-nav>.custom>.active>li>a:focus{
   background-color:#dff0d8 !important;
   border-color:#d6e9c6 !important;
 }
 
-.navbar-default .navbar-nav>.photoshop>.active>a, .navbar-default .navbar-nav>.photoshop>.active>a:hover, .navbar-default .navbar-nav>.photoshop>.active>a:focus{
+.navbar-default .navbar-nav>.photoshop>.active>li>a, .navbar-default .navbar-nav>.photoshop>.active>li>a:hover, .navbar-default .navbar-nav>.photoshop>.active>li>a:focus{
   background-color:#fcf8e3 !important;
   border-color:#faebcc !important;
 }
