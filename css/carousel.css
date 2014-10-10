@@ -101,19 +101,19 @@ body {
 
 /* Display different colors, for different navbar active elements */
 .navbar-nav>.about>.active, .navbar-nav>.about>.active li:hover, .navbar-nav>.about>.active li:focus{
-  background-color:#d9edf7;
-  border-color:#bce8f1;
+  background-color:#d9edf7 !important;
+  border-color:#bce8f1 !important;
 }
 
 
 .navbar-nav>.custom>.active li, .navbar-nav>.custom>.active li:hover, .navbar-nav>.custom>.active li:focus{
-  background-color:#dff0d8;
-  border-color:#d6e9c6;
+  background-color:#dff0d8 !important;
+  border-color:#d6e9c6 !important;
 }
 
 .navbar-nav>.photoshop>.active li, .navbar-nav>.photoshop>.active li:hover, .navbar-nav>.photoshop>.active li:focus{
-  background-color:#fcf8e3;
-  border-color:#faebcc;
+  background-color:#fcf8e3 !important;
+  border-color:#faebcc !important;
 }
 /* RESPONSIVE CSS
 -------------------------------------------------- */
