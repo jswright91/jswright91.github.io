@@ -61,16 +61,16 @@ body.slide-active {
 	}
 	#slide-nav .navbar.slide-active {
 	    position: absolute;
-	    width: 80%;
+	    width: 40%;
 	    top: -1px;
 	    z-index: 1000;
 	}
 	#slide-nav #slidemenu {
 	    background: #f7f7f7;
 	    left: -100%;
-	    width: 80%;
+	    width: 40%;
 	    min-width: 0;
-	    position: absolute;
+	    position: fixed;
 	    padding-left: 0;
 	    z-index: 2;
 	    top: -8px;
@@ -83,7 +83,7 @@ body.slide-active {
 	}
 	#slide-nav #slidemenu .navbar-nav .dropdown-menu li a {
 	    min-width: 0;
-	    width: 80%;
+	    width: 40%;
 	    white-space: normal;
 	}
 	#slide-nav {
@@ -98,8 +98,8 @@ body.slide-active {
 	    top: 0;
 	    height: 100%;
       bottom:0;
-	    width: 80%;
-	    left: -80%;
+	    width: 40%;
+	    left: -40%;
 	    background: #f7f7f7;
 	}
 	#navbar-height-col.inverse {
