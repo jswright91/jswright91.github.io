@@ -100,21 +100,21 @@ body {
 }
 
 /* Display different colors, for different navbar active elements */
-.navbar-nav>.about>.active, .navbar-nav>.about>.active li:hover, .navbar-nav>.about>.active li:focus{
+.navbar-default .navbar-nav>.about>.active>a, .navbar-default .navbar-nav>.about>.active>a:hover, .navbar-default .navbar-nav>.about>.active>a:focus{
   background-color:#d9edf7 !important;
   border-color:#bce8f1 !important;
 }
 
-
-.navbar-nav>.custom>.active li, .navbar-nav>.custom>.active li:hover, .navbar-nav>.custom>.active li:focus{
+.navbar-default .navbar-nav>.custom>.active>a, .navbar-default .navbar-nav>.custom>.active>a:hover, .navbar-default .navbar-nav>.custom>.active>a:focus{
   background-color:#dff0d8 !important;
   border-color:#d6e9c6 !important;
 }
 
-.navbar-nav>.photoshop>.active li, .navbar-nav>.photoshop>.active li:hover, .navbar-nav>.photoshop>.active li:focus{
+.navbar-default .navbar-nav>.photoshop>.active>a, .navbar-default .navbar-nav>.photoshop>.active>a:hover, .navbar-default .navbar-nav>.photoshop>.active>a:focus{
   background-color:#fcf8e3 !important;
   border-color:#faebcc !important;
 }
+
 /* RESPONSIVE CSS
 -------------------------------------------------- */
 
