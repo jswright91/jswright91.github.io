@@ -100,23 +100,23 @@ body {
 }
 
 /* Display different colors, for different navbar active elements */
-#nav-about>a,
+#nav-about.active>a,
 #nav-about.active>a:hover,
 #nav-about.active>a:focus{
   background-color:#d9edf7 !important;
   border-color:#bce8f1 !important;
 }
 
-#nav-custom>a,
+#nav-custom.active>a,
 #nav-custom.active>a:hover,
 #nav-custom.active>a:focus{
   background-color:#dff0d8 !important;
   border-color:#d6e9c6 !important;
 }
 
-#nav-photoshop>a, 
-#nav-photoshop>.active>a:hover,
-#nav-photoshop>.active>a:focus{
+#nav-photoshop.active>a,
+#nav-photoshop.active>a:hover,
+#nav-photoshop.active>a:focus{
   background-color:#fcf8e3 !important;
   border-color:#faebcc !important;
 }
