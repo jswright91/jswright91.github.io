@@ -105,6 +105,7 @@ body {
 #nav-about.active>a:focus{
   background-color:#d9edf7 !important;
   border-color:#bce8f1 !important;
+  color:#31708f !important;
 }
 
 #nav-custom.active>a,
@@ -112,6 +113,7 @@ body {
 #nav-custom.active>a:focus{
   background-color:#dff0d8 !important;
   border-color:#d6e9c6 !important;
+  color:#3c763d !important;
 }
 
 #nav-photoshop.active>a,
@@ -119,6 +121,8 @@ body {
 #nav-photoshop.active>a:focus{
   background-color:#fcf8e3 !important;
   border-color:#faebcc !important;
+  color:#8a6d3b !important;
+
 }
 
 #nav-contact.active>a,
@@ -126,10 +130,11 @@ body {
 #nav-contact.active>a:focus{
   background-color:#8d87ff !important;
   border-color:#6961ff !important;
+  color: #3a32d9 !important;
 }
 
 .alert-royal{
-  background-color: #8d87ff;
+  background-color: #a29efc;
   border-color: #6961ff;
   color: #3a32d9;
 }
