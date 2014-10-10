@@ -32,7 +32,11 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
-
+.navbar-brand {
+  color: #ffffff !important;
+  background-color: #CB5143 !important;
+  border-color: #C63D2D !important;
+}
 
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
@@ -104,7 +108,7 @@ body {
 #nav-about.active>a:hover,
 #nav-about.active>a:focus{
   color: #ffffff !important;
-  background-color: #C63D2D !important;
+  background-color: #CB5143 !important;
   border-color: #C63D2D !important;
 }
 
