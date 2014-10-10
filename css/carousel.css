@@ -146,7 +146,7 @@ body {
 }
 
 .btn-google {
-  color: #ffffff;
+  color: #ffffff !important;
   background-color: #C63D2D;
   border-color: #C63D2D;
 }
