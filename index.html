@@ -210,6 +210,18 @@
 	$("#IframeID").load(function() {
 		$(this).height( $(this).contents().find("html").height() );
 	});
+	//find the height of the iframe
+	function calcHeight()
+	{
+	//Adjust the iframe to that height
+	  var the_height=
+		  document.getElementById('outputFrame').contentWindow.
+		  document.body.scrollHeight;
+
+	  
+	  document.getElementById('outputFrame').height=
+		  the_height;
+	}
     $(function () {
       $.scrollUp({
           scrollName: 'scrollUp',      // Element ID
