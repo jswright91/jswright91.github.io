@@ -9,6 +9,9 @@ body {
   background-image: url(/images/background/seamless_paper_texture.png);
 }
 
+#IframeID {
+	word-wrap: break-word;
+}
 
 
 /* CUSTOMIZE THE NAVBAR
