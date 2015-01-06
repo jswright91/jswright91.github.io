@@ -116,7 +116,7 @@
           <p class="lead"></p>
         </div>
         <div class="col-md-12">
-			<iframe id="IframeID" ="100%" height="2500" src="http://jsfiddle.net/Nerdicus/k7ue4/embedded/" allowfullscreen="allowfullscreen" frameborder="0" scrolling="no"></iframe>
+			<iframe id="IframeID" width="100%" height="2500" src="http://jsfiddle.net/Nerdicus/k7ue4/embedded/" allowfullscreen="allowfullscreen" frameborder="0" scrolling="no"></iframe>
         </div>
       </div>
     </div>
@@ -207,9 +207,6 @@
     <script src="js/offcanvasnav.js"></script>
     <script src="js/jquery.scrollUp.js"></script>
     <script type="text/javascript">
-	$("#IframeID").load(function() {
-		$(this).height( $(this).contents().find("html").height() );
-	});
     $(function () {
       $.scrollUp({
           scrollName: 'scrollUp',      // Element ID
