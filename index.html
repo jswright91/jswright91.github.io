@@ -96,7 +96,7 @@
           <p class="lead">This page I made purely as a 'lets have fun while coding' project, and my employers absolutely loved it, and ended up including it on their webpage.</p>
 		</div>
         <div class="col-md-12">
-      <iframe width="100%" height="300" src="http://jsfiddle.net/Nerdicus/HNNCZ/embedded/" allowfullscreen="allowfullscreen" frameborder="0" scrolling="no"></iframe>
+			<iframe id="IframeID" width="100%" height="300" src="http://jsfiddle.net/Nerdicus/HNNCZ/embedded/" allowfullscreen="allowfullscreen" frameborder="0" scrolling="no"></iframe>
         </div>
       </div>
 
@@ -106,7 +106,7 @@
           <p class="lead">Another 'lets have fun' coding project, but this time playing with Facebook and Twitter API.</p>
         </div>
 		<div class="col-md-12">
-			<iframe width="100%" height="500" src="http://jsfiddle.net/Nerdicus/gdqRZ/3/embedded/" allowfullscreen="allowfullscreen" frameborder="0" scrolling="no"></iframe>
+			<iframe id="IframeID" width="100%" height="500" src="http://jsfiddle.net/Nerdicus/gdqRZ/3/embedded/" allowfullscreen="allowfullscreen" frameborder="0" scrolling="no"></iframe>
 		</div>
       </div>
 
@@ -116,7 +116,7 @@
           <p class="lead"></p>
         </div>
         <div class="col-md-12">
-          <iframe width="100%" height="500" src="http://jsfiddle.net/Nerdicus/k7ue4/embedded/" allowfullscreen="allowfullscreen" frameborder="0" scrolling="no"></iframe>
+			<iframe id="IframeID" width="100%" height="500" src="http://jsfiddle.net/Nerdicus/k7ue4/embedded/" allowfullscreen="allowfullscreen" frameborder="0" scrolling="no"></iframe>
         </div>
       </div>
     </div>
@@ -207,6 +207,9 @@
     <script src="js/offcanvasnav.js"></script>
     <script src="js/jquery.scrollUp.js"></script>
     <script type="text/javascript">
+	$("#IframeID").load(function() {
+		$(this).height( $(this).contents().find("html").height() );
+	});
     $(function () {
       $.scrollUp({
           scrollName: 'scrollUp',      // Element ID
