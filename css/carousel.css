@@ -128,8 +128,18 @@ body {
   z-index: 1;
 }
   
+/* Place the container to the left */
+.tl-left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.tl-right {
+  left: 50%;
+}
+
 /* Add arrows to the left container (pointing right) */
-.pull-left::before {
+.tl-left::before {
   content: " ";
   height: 0;
   position: absolute;
@@ -143,7 +153,7 @@ body {
 }
 
 /* Add arrows to the right container (pointing left) */
-.pull-right::before {
+.tl-right::before {
   content: " ";
   height: 0;
   position: absolute;
@@ -154,6 +164,11 @@ body {
   border: medium solid white;
   border-width: 10px 10px 10px 0;
   border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.tl-right::after {
+  left: -16px;
 }
 
 /* The actual content */
@@ -187,12 +202,12 @@ body {
   }
 
 /* Make sure all circles are at the same spot */
-  .pull-left::after, .pull-right::after {
+  .tl-left::after, .tl-right::after {
     left: 15px;
   }
 
 /* Make all right containers behave like the left ones */
-  .pull-right {
+  .tl-right {
     left: 0%;
   }
 }
