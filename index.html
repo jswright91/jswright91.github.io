@@ -101,6 +101,72 @@
         </div><!-- /.container -->
 
 
+        <script type="css">
+        /* The actual timeline (the vertical ruler) */
+        .timeline {
+          position: relative;
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+
+        /* The actual timeline (the vertical ruler) */
+        .timeline::after {
+          content: '';
+          position: absolute;
+          width: 6px;
+          background-color: white;
+          top: 0;
+          bottom: 0;
+          left: 50%;
+          margin-left: -3px;
+        }/* Add arrows to the left container (pointing right) */
+        .pull-left::before {
+          content: " ";
+          height: 0;
+          position: absolute;
+          top: 22px;
+          width: 0;
+          z-index: 1;
+          right: 30px;
+          border: medium solid white;
+          border-width: 10px 0 10px 10px;
+          border-color: transparent transparent transparent white;
+        }
+
+        /* Add arrows to the right container (pointing left) */
+        .pull-right::before {
+          content: " ";
+          height: 0;
+          position: absolute;
+          top: 22px;
+          width: 0;
+          z-index: 1;
+          left: 30px;
+          border: medium solid white;
+          border-width: 10px 10px 10px 0;
+          border-color: transparent white transparent transparent;
+        }
+        </script>
+        <!-- Start Work History -->
+        <hr class="">
+        <div class="row featurette alert">
+            <div class="timeline">
+                <div class="container pull-left">
+                    <h2>Software Engineer / Aktion Associates (2017 - Current)</h2>
+                    <p>Determined operational feasibility by evaluating analysis, problem definition, requirements, solution development, and proposed solutions. Documented and demonstrated solutions by developing documentation, flowcharts, layouts, diagrams, charts, code comments, and clear code. Improved operations by conducting systems analysis, and recommended changes in policies and procedures.</p> 
+                    <p>Provided information by collecting, analyzing, and summarizing development and service issues. Developed software solutions by studying information needs, conferring with users, studying systems flow, data usage, and work processes. Investigated problem areas following the software development life-cycle.</p>
+                </div>
+                <div class="container pull-right">
+                    <h2>Programmer / Data Systems of Arizona (2015 - 2017)</h2>
+                    <p>Wrote code through the use of computer languages such as Progress 4gl, Business Basic, and Windows Batch Scripting. Created isntructions for customers to perform and follow. Worked closely with others ni the company to develop, maintain, debug, and test computer programs.</p>
+                </div>
+                <div class="container pull-left">
+                    <h2>Web Developer &amp; General IT / Brown's Partsmaster (2012-2015)</h2>
+                    <p>Managed and wrote code for the website. Took pictures, and designed all images for the product merchanidse. Maintained stock of new supplies and computer components for the company. Diagnosed problems with the website, computers, and any electronic equipment on hand.</p>
+                </div>
+            </div>        
+        </div>
+        
         <!-- START THE WORK EXAMPLES -->
         <hr class="">
         <div class="row featurette alert">
