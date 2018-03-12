@@ -177,8 +177,7 @@ body {
   left: 50%;
   margin-left: -25px;
   background-color: #999999;
-  /*---- Removed due to issue with displaying over the content on the page
-      z-index: 100;*/
+  z-index: 10;
   border-top-right-radius: 50%;
   border-top-left-radius: 50%;
   border-bottom-right-radius: 50%;
