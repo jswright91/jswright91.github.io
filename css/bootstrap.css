@@ -319,6 +319,14 @@ img {
 .img-circle {
   border-radius: 50%;
 }
+.img-fluid {
+    max-width: 100%;
+    height: auto
+}
+.mr-auto,
+.mx-auto {
+    margin-right: auto!important
+}
 hr {
   margin-top: 20px;
   margin-bottom: 20px;
