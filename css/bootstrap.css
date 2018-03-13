@@ -598,17 +598,29 @@ pre code {
     .container {
         max-width: 540px
     }
+    .img-fluid {
+        max-width: 25%;
+        height: auto
+    }
 }
 
 @media (min-width:768px) {
     .container {
         max-width: 720px
     }
+    .img-fluid {
+        max-width: 50%;
+        height: auto
+    }
 }
 
 @media (min-width:992px) {
     .container {
         max-width: 960px
+    }
+    .img-fluid {
+        max-width: 75%;
+        height: auto
     }
 }
 
