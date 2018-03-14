@@ -46,7 +46,7 @@
     
     <header>
         <!-- NAVBAR CONTENT -->
-        <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-lg" target="main-navbar">
+        <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-lg" id="main-navbar">
             <div class="container">
                 <a class="navbar-brand" href="#"><strong>JUSTIN WRIGHT</strong></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggle_collapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,9 +54,15 @@
                 </button>
                 <div class="collapse navbar-collapse" id="toggle_collapse">
                     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li id="nav-about" class="about nav-item"><a class="nav-link" target="_self" href="#about">About Me</a></li>
-                        <li id="nav-about" class="about nav-item"><a class="nav-link" target="_self" href="#work-history">Work History</a></li>
-                        <li id="nav-about" class="about nav-item"><a class="nav-link" target="_self" href="#work-examples">Work Examples</a></li>
+                        <li class="about nav-item">
+                            <a class="nav-link" href="#about">About Me</a>
+                        </li>
+                        <li class="about nav-item">
+                            <a class="nav-link" href="#work-history">Work History</a>
+                        </li>
+                        <li class="about nav-item">
+                            <a class="nav-link" href="#work-examples">Work Examples</a>
+                        </li>
                     </ul>
                     <ul class="nav navbar-nav my-2 my-lg-0">
                         <li><a class="btn btn-lg btn-google my-2 my-sm-0" target="_blank" href="uploads/JustinWright-Resume-2018.pdf">View my Resume</a></li>
@@ -67,7 +73,7 @@
     </header>
     
     <main role="main">
-    <div class="container" data-spy="scroll" data-target="#main-navbar">
+    <div class="container" data-spy="scroll" data-target="#main-navbar" data-offset="0">
         <div class="row">
             <div class="col">
                 <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="jswright91">
