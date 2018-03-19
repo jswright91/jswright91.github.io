@@ -20,6 +20,7 @@ $api = BreezeChms\API::forge(array(
 
 # Example - list people
 $people = $api->people()->list()->get();
+echo($people)
 var_dump($people);
 
 # Example - show person
