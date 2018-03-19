@@ -1,0 +1,50 @@
+{
+  "people_list": {
+    "verb": "GET",
+    "path": "/api/people"
+  },
+  "people_show": {
+    "verb": "GET",
+    "path": "/api/people/{id}"
+  },
+  "profile_fields_list": {
+    "verb": "GET",
+    "path": "/api/profile"
+  },
+  "events_list": {
+    "verb": "GET",
+    "path": "/api/events"
+  },
+  "attendance_record_create": {
+    "verb": "GET",
+    "path": "/api/attendance/add"
+  },
+  "attendance_record_delete": {
+    "verb": "GET",
+    "path": "/api/attendance/delete"
+  },
+  "contributions_list": {
+    "verb": "GET",
+    "path": "/api/giving/list"
+  },
+  "contributions_create": {
+    "verb": "GET",
+    "path": "/api/giving/add"
+  },
+  "contributions_update": {
+    "verb": "GET",
+    "path": "/api/giving/edit"
+  },
+  "contributions_delete": {
+    "verb": "GET",
+    "path": "/api/giving/delete"
+  },
+  "contributions_show": {
+    "verb": "GET",
+    "path": "/api/giving/view"
+  },
+  "funds_list": {
+    "verb": "GET",
+    "path": "/api/funds/list"
+  }
+}
