@@ -25,6 +25,8 @@ var_dump($people);
 
 # Example - show person
 $person = $api->people($people[0]['id'])->show()->get();
+// output person's name
+echo "<h1>" . $person->first_name . " " . $person->last_name . "</h1><hr />";
 var_dump($person);
 
 # Example - list profile fields
