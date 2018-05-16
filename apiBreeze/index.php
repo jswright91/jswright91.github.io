@@ -15,7 +15,7 @@ require_once 'vendor/com.rapiddigitalllc/breezechms/api.php';
 
 $api = BreezeChms\API::forge(array(
     'key'     => '6a9570397f8aae62b56c960695fba077', // set api key here
-    'baseUrl' => 'https://inchurchphoenix.breezechms.com',
+    'baseUrl' => 'https://inchurchphoenix.breezechms.com/api/',
 ));
 
 # Example - list people
